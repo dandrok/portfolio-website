@@ -1,3 +1,13 @@
+:root {
+  --font-cardo: 'Cardo', serif;
+  --font-cairo: 'Cairo', sans-serif;
+
+  --color-blue: #1100ff;
+  --color-dark: #444444;
+  --color-gray: #d9d9d9;
+  --color-whiite: #fff;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
