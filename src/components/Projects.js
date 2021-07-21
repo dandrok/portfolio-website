@@ -1,7 +1,15 @@
-import React from 'react'
+import styles from './Projects.module.css'
+import Project from './Project'
 
 const Projects = () => {
-  return <div>Projects</div>
+  return (
+    <section className={styles.projects}>
+      <Project />
+      <Project />
+      <Project />
+      <Project />
+    </section>
+  )
 }
 
 export default Projects

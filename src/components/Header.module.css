@@ -1,0 +1,40 @@
+.header {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav :nth-last-child(2) {
+  font-family: var(--font-cairo);
+  font-size: var(--font-size_16);
+}
+.header__nav:last-child {
+  font-family: var(--font-cairo);
+  font-size: var(--font-size_16);
+}
+
+.header__nav__logo {
+  border: solid var(--color-blue-medium) 1px;
+  border-radius: 99% 40% 99% 40%;
+
+  padding: 0.5rem 1rem;
+  transition: all 1s;
+}
+.header__nav__logo:hover {
+  border: solid var(--color-blue-medium) 1px;
+  border-radius: 40% 99% 40% 99%;
+
+  cursor: pointer;
+}
+
+.header__nav__logo_p {
+  position: relative;
+  top: 5px;
+  left: 1rem;
+  font-size: 2rem;
+  font-family: var(--font-cardo);
+  font-style: italic;
+}

@@ -1,17 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --font-cardo: 'Cardo', serif;
   --font-cairo: 'Cairo', sans-serif;
 
-  --color-blue: #1100ff;
-  --color-dark: #444444;
-  --color-gray: #d9d9d9;
-  --color-whiite: #fff;
+  --color-blue-medium: #040fd9;
+  --color-blue-regular: #0511f2;
+  --color-blue-light: #a7abf2;
+  --color-dark: #0d0d0d;
+  --color-whiite: #f2f2f2;
+
+  --font-size_16: 1rem;
+  --font-size_24: 1.5rem;
+  --font-size_32: 2rem;
+  --font-size_48: 3rem;
+  --font-size_128: 8rem;
 }
 
 body {
-  margin: 0 auto;
-  max-width: 1377px;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--color-dark) !important;
+  background: var(--color-whiite);
+}
+
+ul,
+li {
+  list-style: none;
 }

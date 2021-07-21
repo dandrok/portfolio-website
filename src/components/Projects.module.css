@@ -1,0 +1,29 @@
+.projects {
+  margin: 0 auto;
+  max-width: 1362px;
+  overflow-y: scroll;
+  height: 500px;
+  margin-top: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 9.9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+  border-left: 4.9px solid var(--color-whiite);
+  border-right: 4.9px solid var(--color-whiite);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 185, 185);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(121, 121, 121);
+}
