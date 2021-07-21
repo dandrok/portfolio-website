@@ -7,8 +7,8 @@ const Header = () => {
         <div className={styles.header__nav__logo}>
           <p className={styles.header__nav__logo_p}>P.S.</p>
         </div>
-        <div>projects</div>
-        <div>about me</div>
+        <div className={styles.header__nav_underline}>projects</div>
+        <div className={styles.header__nav_underline}>about me</div>
       </nav>
     </section>
   )
