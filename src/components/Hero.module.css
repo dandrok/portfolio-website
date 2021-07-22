@@ -6,20 +6,28 @@
 .bg__text {
   height: 90vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
+
   font-size: var(--font-size_128);
   color: var(--color-whiite);
   text-transform: capitalize;
   font-style: italic;
 }
 .bg__text_scroll {
-  margin-top: 2rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.bg__text_main {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bg__text_down {
@@ -27,6 +35,7 @@
   font-family: var(--font-cairo);
   font-style: normal;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .icon {
@@ -35,4 +44,38 @@
 
   position: relative;
   top: 2px;
+}
+
+.text__690 {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .text__700 {
+    display: none;
+  }
+  .text__690 {
+    display: block;
+  }
+  .bg__text_main {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .bg__text {
+    font-size: var(--font-size_96);
+  }
+
+  .bg__text_main {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .bg__text {
+    font-size: var(--font-size_64);
+  }
+  .bg__text_main {
+    margin-top: 2rem;
+  }
 }

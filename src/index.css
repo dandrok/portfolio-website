@@ -18,6 +18,8 @@
   --font-size_24: 1.5rem;
   --font-size_32: 2rem;
   --font-size_48: 3rem;
+  --font-size_64: 4rem;
+  --font-size_96: 6rem;
   --font-size_128: 8rem;
 }
 
@@ -28,7 +30,16 @@ body {
   background: var(--color-whiite);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul,
 li {
   list-style: none;
 }
+
+/* DEBUG */
+/* * {
+  border: solid red 1px;
+} */

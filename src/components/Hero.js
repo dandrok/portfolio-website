@@ -6,9 +6,14 @@ const Hero = () => {
   return (
     <section className={styles.bg}>
       <div className={styles.bg__text}>
-        <div>Patryk Stusik</div>
-        <div>Frontend</div>
-        <div>Developer</div>
+        <div className={styles.bg__text_main}>
+          <div className={styles.text__700}>Patryk Stusik</div>
+          <div className={styles.text__690}>Patryk</div>
+          <div className={styles.text__690}>Stusik</div>
+
+          <div>Frontend</div>
+          <div>Developer</div>
+        </div>
         <div className={styles.bg__text_scroll}>
           <div>
             <p className={styles.bg__text_down}>SCROLL DOWN</p>
