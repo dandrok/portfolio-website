@@ -14,22 +14,3 @@
   margin-top: 1rem;
   max-width: 90%;
 }
-
-button {
-  border: solid var(--color-blue-medium) 1px;
-  border-radius: 99% 40% 99% 40%;
-  padding: 0.25rem 1rem;
-  font-size: var(--font-size_24);
-  font-family: var(--font-cardo);
-  background: none;
-  transition: all 0.5s;
-}
-
-button:hover {
-  border-radius: 40% 99% 40% 99%;
-  background-color: var(--color-blue-light);
-}
-button:active {
-  border-radius: 40% 99% 40% 99%;
-  border: var(--color-blue-medium) dotted 1px;
-}

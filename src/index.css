@@ -48,3 +48,22 @@ a,
 u {
   text-decoration: none;
 }
+
+button {
+  border: solid var(--color-blue-medium) 1px;
+  border-radius: 99% 40% 99% 40%;
+  padding: 0.25rem 1rem;
+  font-size: var(--font-size_16) !important;
+  font-family: var(--font-cairo) !important;
+  background: none;
+  transition: all 0.5s;
+}
+
+button:hover {
+  border-radius: 40% 99% 40% 99%;
+  background-color: var(--color-blue-light);
+}
+button:active {
+  border-radius: 40% 99% 40% 99%;
+  border: var(--color-blue-medium) dotted 1px;
+}
