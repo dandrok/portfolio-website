@@ -1,6 +1,7 @@
 .header {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  height: 5 vh;
 }
 .header__nav {
   display: flex;

@@ -43,3 +43,8 @@ li {
 /* * {
   border: solid red 1px;
 } */
+
+a,
+u {
+  text-decoration: none;
+}

@@ -44,6 +44,7 @@
 
   position: relative;
   top: 2px;
+  filter: invert(1); /* color reverse */
 }
 
 .text__690 {
