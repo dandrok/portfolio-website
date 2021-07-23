@@ -64,13 +64,12 @@
 }
 
 .btnTwo:hover {
-  transform: rotate(45deg);
   border-radius: none;
   border: none;
   background: none;
+  transform: translateX(-0.5rem);
 }
 .btnTwo:active {
-  transform: rotate(45deg);
   border-radius: none;
   border: none;
   background: none;

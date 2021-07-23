@@ -17,9 +17,10 @@
 }
 .bg__text_scroll {
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
   margin-bottom: 2rem;
+  align-items: center;
 }
 
 .bg__text_main {
@@ -51,6 +52,32 @@
   display: none;
 }
 
+.btnTwo {
+  border: none;
+
+  margin-top: 2rem;
+
+  background: none;
+  transition: all 0.75s;
+
+  right: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.btnTwo:hover {
+  border-radius: none;
+  border: none;
+  background: none;
+  transform: translateY(0.5rem);
+}
+.btnTwo:active {
+  border-radius: none;
+  border: none;
+  background: none;
+}
+
 @media only screen and (max-width: 700px) {
   .text__700 {
     display: none;
@@ -60,6 +87,9 @@
   }
   .bg__text_main {
     margin-top: 4rem;
+  }
+  .bg__text {
+    font-size: var(--font-size_96);
   }
 }
 
@@ -78,5 +108,14 @@
   }
   .bg__text_main {
     margin-top: 2rem;
+  }
+  .bg__text_scroll {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+    position: relative;
+    bottom: 6rem;
   }
 }
