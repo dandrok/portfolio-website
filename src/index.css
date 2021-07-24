@@ -67,3 +67,30 @@ button:active {
   border-radius: 40% 99% 40% 99%;
   border: var(--color-blue-medium) dotted 1px;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 9.9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-left: 4.9px solid var(--color-whiite);
+  border-right: 4.9px solid var(--color-whiite);
+}
+::-webkit-scrollbar-track:hover {
+  background: gray;
+  border-left: 4.9px solid var(--color-whiite);
+  border-right: 4.9px solid var(--color-whiite);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(185, 185, 185);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(121, 121, 121);
+}
