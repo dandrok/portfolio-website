@@ -2,11 +2,11 @@ import styles from './Project.module.css'
 
 import { Link } from 'react-router-dom'
 
-const Project = () => {
+const Project = ({ ...item }) => {
   return (
-    <article className={styles.project}>
-      <p>personal project</p>
-      <h1>weather app</h1>
+    <article key={item.id} className={styles.project}>
+      <p>{item.type}</p>
+      <h1>{item.title}</h1>
       <Link to='project-page'>
         <button>more</button>
       </Link>
