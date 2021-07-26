@@ -42,7 +42,7 @@ const ProjectPageContent = () => {
                     transform='translate(960.5 996.5)'
                     fill='none'
                     stroke='#0d0d0d'
-                    stroke-width='2'
+                    strokeWidth='2'
                   />
                   <path
                     id='Path_1'
@@ -51,7 +51,7 @@ const ProjectPageContent = () => {
                     transform='translate(-0.12 27.211)'
                     fill='none'
                     stroke='#0d0d0d'
-                    stroke-width='2'
+                    strokeWidth='2'
                   />
                   <path
                     id='Path_2'
@@ -60,7 +60,7 @@ const ProjectPageContent = () => {
                     transform='translate(0.048 26.874)'
                     fill='none'
                     stroke='#0d0d0d'
-                    stroke-width='2'
+                    strokeWidth='2'
                   />
                 </g>
               </svg>
@@ -70,7 +70,7 @@ const ProjectPageContent = () => {
         <div className={styles.content__containerRight}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
-            max-width='476.977'
+            maxWidth='476.977'
             height='357.733'
             viewBox='0 0 476.977 357.733'
           >

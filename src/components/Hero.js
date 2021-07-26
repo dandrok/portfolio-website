@@ -35,7 +35,7 @@ const Hero = () => {
                   transform='translate(960.5 996.5)'
                   fill='none'
                   stroke='#f2f2f2'
-                  stroke-width='2'
+                  strokeWidth='2'
                 />
                 <path
                   id='Path_1'
@@ -44,7 +44,7 @@ const Hero = () => {
                   transform='translate(-0.12 0.497)'
                   fill='none'
                   stroke='#f2f2f2'
-                  stroke-width='2'
+                  strokeWidth='2'
                 />
                 <path
                   id='Path_2'
@@ -53,7 +53,7 @@ const Hero = () => {
                   transform='translate(0.048 0.161)'
                   fill='none'
                   stroke='#f2f2f2'
-                  stroke-width='2'
+                  strokeWidth='2'
                 />
               </g>
             </svg>

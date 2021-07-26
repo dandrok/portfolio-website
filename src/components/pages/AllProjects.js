@@ -1,7 +1,6 @@
 import Footer from '../Footer'
 import Header from '../Header'
 import Projects from '../Projects'
-import Project from '../Project'
 
 import Layout from '../layout/Layout'
 

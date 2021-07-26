@@ -28,7 +28,9 @@ const Projects = () => {
 
   return (
     <section className={styles.projects}>
-      {data && data.length > 0 && data.map((item) => <Project {...item} />)}
+      {data &&
+        data.length > 0 &&
+        data.map((item) => <Project key={item.id} {...item} />)}
     </section>
   )
 }
