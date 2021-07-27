@@ -14,7 +14,8 @@ function App() {
 
         <Route path='/about' component={About} />
         <Route path='/all-projects' component={AllProjects} />
-        <Route path='/project-page' component={ProjectPage} />
+        {/* <Route path='/project-page' component={ProjectPage} /> */}
+        <Route path='/project-page/:id' component={ProjectPage} />
       </Switch>
     </Router>
   )

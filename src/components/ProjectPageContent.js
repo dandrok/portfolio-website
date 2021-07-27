@@ -2,14 +2,37 @@ import styles from './ProjectPageContent.module.css'
 import { FaLink, FaGithub } from 'react-icons/fa'
 
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 const ProjectPageContent = () => {
+  const [data, setData] = useState([])
+
+  const getData = () => {
+    fetch('data.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
+      .then(function (response) {
+        console.log(response)
+        return response.json()
+      })
+      .then(function (myJson) {
+        console.log(myJson)
+        setData(myJson)
+      })
+  }
+  useEffect(() => {
+    getData()
+  }, [])
+
   return (
     <section className={styles.content}>
       <div className={styles.content__container}>
         <div className={styles.content__container_flex}>
           <article className={styles.content__containerLeft}>
-            <h1>NAME OF PROJECT</h1>
+            <h1>{data.title}</h1>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
               optio, voluptatibus quidem iste ipsum aspernatur fuga voluptatem
