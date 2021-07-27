@@ -7,12 +7,7 @@ const Projects = () => {
   const [data, setData] = useState([])
 
   const getData = () => {
-    fetch('data.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    })
+    fetch('http://localhost:8000/projects')
       .then(function (response) {
         console.log(response)
         return response.json()

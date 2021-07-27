@@ -1,43 +1,44 @@
 import styles from './ProjectPageContent.module.css'
 import { FaLink, FaGithub } from 'react-icons/fa'
 
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+
 import { useState, useEffect } from 'react'
 
 const ProjectPageContent = () => {
+  const { id } = useParams()
   const [data, setData] = useState([])
 
-  const getData = () => {
-    fetch('data.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    })
-      .then(function (response) {
-        console.log(response)
-        return response.json()
-      })
-      .then(function (myJson) {
-        console.log(myJson)
-        setData(myJson)
-      })
-  }
   useEffect(() => {
     getData()
   }, [])
+
+  const getData = () => {
+    fetch('http://localhost:8000/projects/' + id)
+      .then(function (response) {
+        console.log('hey' + response)
+        return response.json()
+      })
+      .then(function (myJson) {
+        console.log('hey2' + myJson)
+        setData(myJson)
+      })
+  }
 
   return (
     <section className={styles.content}>
       <div className={styles.content__container}>
         <div className={styles.content__container_flex}>
           <article className={styles.content__containerLeft}>
-            <h1>{data.title}</h1>
+            <h1 style={{ textTransform: 'uppercase' }}>{data.title}</h1>
+
+            {console.log(data.title)}
+
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia,
-              optio, voluptatibus quidem iste ipsum aspernatur fuga voluptatem
-              unde recusandae minima quibusdam ullam accusantium molestiae
-              minus, explicabo beatae tempora totam autem?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              voluptatum esse ratione, facilis quibusdam doloribus aut ad
+              quisquam natus fugit corrupti tempore error minima fuga,
+              cupiditate velit ea vero ab?
             </p>
             <div className={styles.content__containerLeftIcons}>
               <FaGithub />
@@ -45,7 +46,7 @@ const ProjectPageContent = () => {
             </div>
           </article>
 
-          <Link to='all-projects'>
+          <Link to='/all-projects'>
             <button className={styles.btnTwo}>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
