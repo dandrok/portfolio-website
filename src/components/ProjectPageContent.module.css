@@ -40,12 +40,14 @@
 .content__containerRight {
   align-self: center;
   width: auto;
+  margin: 0 1rem;
 }
-/* .content__containerRight svg {
-  width: 100%;
-  height: auto;
-} */
 
+.content__containerRight > img {
+  width: 520px;
+  height: 380px;
+  object-fit: cover;
+}
 .button_font {
   font-size: var(--font-size_24);
   font-family: var(--font-cardo);
