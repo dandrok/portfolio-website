@@ -47,6 +47,12 @@ li {
 a,
 u {
   text-decoration: none;
+  color: var(--color-dark);
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  opacity: 70%;
 }
 
 button {
@@ -62,6 +68,7 @@ button {
 button:hover {
   border-radius: 40% 99% 40% 99%;
   background-color: var(--color-blue-light);
+  cursor: pointer;
 }
 button:active {
   border-radius: 40% 99% 40% 99%;

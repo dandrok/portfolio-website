@@ -41,8 +41,12 @@ const ProjectPageContent = () => {
               cupiditate velit ea vero ab?
             </p>
             <div className={styles.content__containerLeftIcons}>
-              <FaGithub />
-              <FaLink />
+              <a href={data.github} target='_blank' rel='noopener noreferrer'>
+                <FaGithub />
+              </a>
+              <a href={data.link} target='_blank' rel='noopener noreferrer'>
+                <FaLink />
+              </a>
             </div>
           </article>
 
