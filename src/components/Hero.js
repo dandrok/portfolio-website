@@ -1,22 +1,69 @@
 import styles from './Hero.module.css'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+
+      transition: {
+        staggerChildren: 0.5,
+      },
+    },
+  }
+  const containerTwo = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+
+      transition: {
+        staggerChildren: 1.5,
+        delay: 1.5,
+      },
+    },
+  }
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, y: 20 },
+  }
+  const itemTwo = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, y: 20 },
+  }
+
   return (
     <section className={styles.bg}>
       <div className={styles.bg__text}>
-        <div className={styles.bg__text_main}>
-          <div className={styles.text__700}>Patryk Stusik</div>
-          <div className={styles.text__690}>Patryk</div>
-          <div className={styles.text__690}>Stusik</div>
-
-          <div>Frontend</div>
-          <div>Developer</div>
-        </div>
-        <div className={styles.bg__text_scroll}>
-          <div>
+        <motion.section
+          variants={container}
+          initial='hidden'
+          animate='show'
+          className={styles.bg__text_main}
+        >
+          <motion.div variants={item}>Frontend</motion.div>
+          <motion.div variants={item}>Developer</motion.div>
+          <motion.div variants={item} className={styles.text__700}>
+            Patryk Stusik
+          </motion.div>
+          <motion.div className={styles.text__690} variants={item}>
+            Patryk
+          </motion.div>
+          <motion.div className={styles.text__690} variants={item}>
+            Stusik
+          </motion.div>
+        </motion.section>
+        <motion.div
+          className={styles.bg__text_scroll}
+          variants={containerTwo}
+          initial='hidden'
+          animate='show'
+        >
+          <motion.div variants={itemTwo}>
             <p className={styles.bg__text_down}>SCROLL DOWN</p>
-          </div>
-          <button className={styles.btnTwo}>
+          </motion.div>
+          <motion.button className={styles.btnTwo} variants={itemTwo}>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width='31.02'
@@ -57,8 +104,8 @@ const Hero = () => {
                 />
               </g>
             </svg>
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   )

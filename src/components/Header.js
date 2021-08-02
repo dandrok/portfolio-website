@@ -2,6 +2,8 @@ import styles from './Header.module.css'
 
 import { Link } from 'react-router-dom'
 
+import { motion } from 'framer-motion'
+
 const Header = () => {
   return (
     <section className={styles.header}>
