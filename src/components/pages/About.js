@@ -1,6 +1,7 @@
 import Header from '../Header'
 import Footer from '../Footer'
 import Layout from '../layout/Layout'
+import AboutMe from '../AboutMe'
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
       <Layout>
         <Header />
       </Layout>
-      <div style={{ height: '71.5vh' }}>about me page</div>
+      <AboutMe />
       <Footer />
     </>
   )
