@@ -46,6 +46,7 @@
   font-weight: 100;
   font-family: var(--font-cairo);
   width: 25%;
+  opacity: 0;
 }
 
 .partTwo {
@@ -93,8 +94,19 @@
   border-bottom: solid var(--color-blue-medium) 2px;
 }
 
-@media screen and (min-width: 900px) {
-  article {
-    padding: 1rem 3rem;
+@media screen and (max-width: 1362px) {
+  .container {
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .aboutMe__p2 {
+    display: none;
+  }
+
+  .aboutMe__p1 {
+    width: 100%;
+    margin-top: 10vh;
+    height: auto;
   }
 }

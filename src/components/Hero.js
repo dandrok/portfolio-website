@@ -26,11 +26,11 @@ const Hero = () => {
 
   const item = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, y: 20 },
+    show: { opacity: 1, y: 10 },
   }
   const itemTwo = {
     hidden: { opacity: 0 },
-    show: { opacity: 1, y: 20 },
+    show: { opacity: 1, y: 10 },
   }
 
   return (
