@@ -59,6 +59,7 @@
   font-family: var(--font-cardo);
   font-size: var(--font-size_48);
   font-weight: 100;
+  margin-top: 2rem;
 }
 
 .partTwo_container {
