@@ -13,14 +13,14 @@ const Footer = () => {
             <FaLinkedin />
             <FaGithub />
           </div>
-          <div className={styles.footer__text}>
+          {/* <div className={styles.footer__text}>
             made with&nbsp;
             <span>
               <FaCode />
             </span>
             &nbsp;by dandrok
           </div>
-          <div></div>
+          <div></div> */}
         </section>
       </Layout>
     </footer>

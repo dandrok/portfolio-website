@@ -15,7 +15,7 @@
 
 .footer__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 100px;
   padding-top: 4rem;
 }
